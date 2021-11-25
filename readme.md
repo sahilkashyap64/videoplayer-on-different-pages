@@ -79,3 +79,5 @@ To run the Ping CRM tests, run:
 ```
 phpunit
 ```
+## The Persistent and Draggable video player div
+![Video player dragged](Screencast.webm)
