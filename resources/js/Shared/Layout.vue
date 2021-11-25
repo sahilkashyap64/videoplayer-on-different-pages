@@ -42,6 +42,21 @@
         </div>
       </div>
     </div>
+    <!-- <div class="fixed bottom-0 right-0 z-50">
+    This is a floating player
+    <video-player :options="videoOptions"/>
+</div> -->
+ <DraggableDiv class="fixed bottom-0 right-0 z-50">
+    <template slot="header">
+      Press me to drag
+    </template>
+    <template slot="main" >
+     <video-player :options="videoOptions"/>
+    </template>
+    <template slot="footer">
+      [[[ SOME CONTENT HERE]]]
+    </template>
+  </DraggableDiv>
   </div>
 </template>
 
@@ -51,7 +66,8 @@ import Logo from '@/Shared/Logo'
 import Dropdown from '@/Shared/Dropdown'
 import MainMenu from '@/Shared/MainMenu'
 import FlashMessages from '@/Shared/FlashMessages'
-
+import VideoPlayer from "@/Shared/VideoPlayer.vue";
+import DraggableDiv from "@/Shared/DraggableDiv";
 export default {
   components: {
     Dropdown,
@@ -59,6 +75,23 @@ export default {
     Icon,
     Logo,
     MainMenu,
+    VideoPlayer,
+    DraggableDiv,
   },
+  data() {
+		return {
+			videoOptions: {
+				autoplay: true,
+				controls: true,
+				sources: [
+					{
+						src:
+							"//assets3.ign.com/videos/zencoder/2016/06/15/640/7080c56a76e2b74ec8ecfe4c224441d4-500000-1466028542-w.mp4",
+						  type: "video/mp4"
+					}
+				]
+			}
+		};
+	}
 }
 </script>
