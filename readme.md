@@ -1,3 +1,8 @@
+
+
+## The Persistent and Draggable video player div
+
+https://user-images.githubusercontent.com/32007662/143434930-012f4fcf-27f9-46f3-9081-598d1703cb37.mp4
 # Ping CRM
 
 A demo application to illustrate how Inertia.js works.
@@ -79,9 +84,6 @@ To run the Ping CRM tests, run:
 ```
 phpunit
 ```
-## The Persistent and Draggable video player div
-
-https://user-images.githubusercontent.com/32007662/143434930-012f4fcf-27f9-46f3-9081-598d1703cb37.mp4
 
 
 
